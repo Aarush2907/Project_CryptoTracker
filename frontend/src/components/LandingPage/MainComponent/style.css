@@ -1,0 +1,121 @@
+.flex-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .5rem 3rem;
+    
+}
+
+.crypto-insights-heading , .real-time-heading{
+    font-size: 6rem;
+    margin: 0;
+}
+
+.crypto-insights-heading{
+    color: var(--white);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white);   
+    margin-top: 10%;
+}
+
+.crypto-insights-heading:hover{
+    -webkit-text-stroke-color: var(--red);
+    color: var(--black);
+    transition: all 0.7s;
+    
+}
+
+.real-time-heading {
+   color: var(--red);
+}
+
+.info-text {
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.phone-container {
+    width: 50%;
+    position: relative;
+}
+
+.iphone 
+{
+    position: absolute;
+    z-index: 100;
+    min-width: 250px;
+    width: 40%;
+    right: 0;
+    top: 1rem;
+}
+
+.gradient {
+    position: absolute;
+    min-width: 200px;
+    width: 32%;
+    top: 8rem;
+    right: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+    .crypto-insights-heading , .real-time-heading{
+        font-size: 5rem;
+        
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .iphone 
+{    
+    min-width: 200px;
+}
+
+.gradient {
+    min-width: 150px;
+    top: 6 rem;
+}
+}
+
+@media only screen and (max-width: 800px) {
+    .flex-info {
+        flex-direction: column;
+    }
+
+    .phone-container {
+        display: block;
+        margin: auto;
+    }
+
+    .iphone {
+        margin-top: 3rem;
+        left: 10%;
+    }
+
+    .gradient {
+        margin-top: 1rem;
+        left: 25%;
+    }
+    .left-component {
+        width: 100%;
+    }
+
+    .btn-flex {
+        justify-content: center;
+    }
+    .crypto-insights-heading , .real-time-heading{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .info-text {
+        text-align: center;
+    }
+}
